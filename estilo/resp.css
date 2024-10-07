@@ -1,0 +1,88 @@
+/* Estilo Responsivo */
+
+/* Tela de Celular */
+/* Menu - Tela Pequena */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra o botão de abrir no tamanho menor */
+    }
+
+    .close-btn {
+        display: block; /* Mostra o botão de fechar no tamanho menor */
+    }
+
+    .side-menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: #333;
+        overflow-x: hidden;
+        transition: width 0.3s;
+        padding-top: 60px;
+        z-index: 3;
+    }
+
+    .side-menu ul {
+        list-style-type: none;
+        padding: 0;
+        display: block;
+    }
+
+    .side-menu li {
+        padding: 15px 25px;
+    }
+
+
+}
+
+/* Menu - Tela Completa */
+@media screen and (min-width: 769px) {
+    .side-menu {
+        width: 466px; /* Menu fica aberto por padrão no tamanho maior */
+        display: flex;
+    }
+
+    .side-menu ul{
+        width: 465px;
+    }
+
+    .side-menu ul > li > a{
+        color: black;
+        transition: ease 0.5s;
+    }
+
+    .side-menu a:hover{
+        color: white;
+        background-color: rgb(68, 148, 240);
+    }
+
+    .menu-toggle {
+        display: none; /* Esconde o botão de abrir no tamanho maior */
+    }
+
+    .close-btn {
+        display: none; /* Esconde o botão de fechar no tamanho maior */
+    }
+}
+
+
+/* Tela de Tablet */
+@media screen and (max-width: 992px){
+    
+}
+
+
+/* Tela de Computador */
+@media screen and (min-width: 1200px){
+    main{
+        margin-top: -100px;
+        width: 100%;
+        height: auto;
+    }
+
+    main h2{
+        margin: 20px 0px;
+    }
+}
