@@ -34,7 +34,13 @@
         padding: 15px 25px;
     }
 
-
+    #con{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
 }
 
 /* Menu - Tela Completa */
