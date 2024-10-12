@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="/estilo/style.css">
+    <link rel="stylesheet" href="/estilo/resp.css">
+
+    <!-- Link Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Link Java Script -->
+    <script src="JS/script.js" defer></script>
+
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="imagens/Logo.jpg" type="image/x-icon">
+
+    <title>Ecommerce</title>
+</head>
+
+<body>
+    <!-- Cabecalho -->
+    <header id="cab">
+        <h1>Ecommerce</h1>
+
+        <button class="menu-toggle" id="menu-toggle">☰</button>
+        <nav id="side-menu" class="side-menu">
+            <button class="close-btn" id="close-btn">&times;</button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#pro">Produtos</a></li>
+                <li><a href="#ben">Beneficíos</a></li>
+                <li><a href="#con">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Carrossel Automatico -->
+    <section  class="slider">
+        <div class="slideConteudo">
+            <input type="radio" name="btn-radio" id="radio1" checked="">
+            <input type="radio" name="btn-radio" id="radio2">
+            <input type="radio" name="btn-radio" id="radio3">
+
+            <div class="slide-box primeiro">
+                <img src="/imagens/car1.png" alt="slide 1">
+            </div>
+
+            <div class="slide-box segundo">
+                <img src="/imagens/car2.png" alt="slide 2">
+            </div>
+
+            <div class="slide-box terceiro">
+                <img src="/imagens/car3.png" alt="slide3">
+            </div>
+
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conteudo Principal -->
+    <main>
+        <!-- Sessão Produtos -->
+        <h2>Produtos</h2>
+        <section id="pro">
+            <article id="conteudo">    
+                <div class="ficha">
+                    <img src="imagens/relo.jpg" alt="">
+                    <h3
+                    >Relógio</h3>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="ficha">
+                    <img src="imagens/sansung.jpg" alt="">
+                    <h3>Smartphone sansung Galaxy</h3>
+
+                    <button>Comprar</button>
+                </div>
+
+                <div class="ficha">
+                    <img src="imagens/Camisa.jpg" alt="">
+                    <h3
+                    >Camisa Preta</h3>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="ficha">
+                    <img src="imagens/carro.jpg" alt="">
+                    <h3
+                    >Carro de Brinquedo</h3>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="ficha">
+                    <img src="imagens/note.jpg" alt="">
+                    <h3
+                    >Notebook Gamer Asus</h3>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="ficha">
+                    <img src="imagens/teve.jpg" alt="">
+                    <h3
+                    >Televisão 70 polegadas</h3>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="ficha">
+                    <img src="imagens/coca.jpg" alt="">
+                    <h3
+                    >Refrigerante Coca-cola</h3>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="ficha">
+                    <img src="imagens/dori.jpg" alt="">
+                    <h3
+                    >Salgadinho Doritos</h3>
+                    <button>Comprar</button>
+                </div>
+
+                <div class="ficha">
+                    <img src="imagens/maça.jpg" alt="">
+                    <h3
+                    >Pacote de 15 maças</h3>
+                    <button>Comprar</button>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sessão Benefícios -->
+        <h2>Beneficíos</h2>
+        <section id="ben">
+            <div class="card">
+                <div>
+                    <img class="img-ben" src="imagens/variedade.jpg" alt="">
+                    
+                </div>
+
+                <div class="txt">
+                    <h3>Variedade</h3>
+                    
+                    <p>A loja oferece uma ampla gama de produtos. Além disso, é possível personalizar recomendações e ofertas com base nas preferências dos usuários.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="txt">
+                    <h3>Entrega gratuita e com Desconto</h3>
+                    
+                    <p>Fornecemos um sistema de rastreamento de pedidos que permite que os usuários possa acompanhar a entrega em tempo real, aumentando a sua confiança e a satisfação.
+                        
+                    Além disso, oferecemos frete grátis ou com desconto em compras acima de um valor específico.</p>
+                </div>
+
+                <div>
+                    <img class="img-ben" src="imagens/correio.jpg" alt="">
+                    
+                </div>
+
+                
+            </div>
+
+            <div class="card">
+                <div>
+                    <img class="img-ben" src="imagens/protecao.jpg" alt="">
+                    
+                </div>
+
+                <div class="txt">
+                    <h3>Proteção de Dados e Transações Seguras</h3>
+                    
+                    <p>Garantimos que a loja utiliza criptografia SSL e certificações de segurança, como PCI-DSS, oferecemos aos usuarios a confiança de que suas informações pessoais e financeiras estão protegidas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Produtos em Alta -->
+        <section id="alt"></section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <!-- Sessão contatos -->
+        <h2>Contato</h2>
+        <section id="con">
+            <ul>
+                <li><a href="#"><button><i class="bi bi-whatsapp"></i> <p>Whatsapp</p></button></a></li>
+
+                <li><a href="#"><button><i class="bi bi-instagram"></i></i> <p>Instagram</p></button></a></li>
+
+                <li><a href="#"><button><i class="bi bi-envelope"></i> <p>Email</p></button></a></li>
+
+                <li><a href="#"><button><i class="bi bi-linkedin"></i> <p>Linkedin</p></button></a></li>
+
+                <li><a href="#"><button><i class="bi bi-github"></i> <p>Git Hub</p></button></a></li>
+            </ul>
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.5732499235964!2d-46.62610772554943!3d-23.691214566373947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce44fa17b4e811%3A0x6bc334d61f455895!2sShopping%20Pra%C3%A7a%20da%20Mo%C3%A7a!5e0!3m2!1spt-BR!2sbr!4v1728751916841!5m2!1spt-BR!2sbr" width="100%" height="385" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+        </section>
+
+        <h4>&copy; Todos os Direito Reservados para Gabryel da Silva Moura</h4>
+    </footer>
+
+    <!-- Botão Subir -->
+    <button id="sub"><a href="#cab"><i class="bi bi-arrow-up"></i></a></button>
+
+    <!-- Botão Dia/Noite -->
+    <button id="toggle-theme" class="mud"><i class="bi bi-brightness-high-fill"></i></button>
+</body>
+</html>

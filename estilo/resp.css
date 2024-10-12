@@ -1,0 +1,170 @@
+/* Estilo Responsivo */
+
+/* Tela de Celular */
+/* Menu - Tela Pequena */
+@media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra o botão de abrir no tamanho menor */
+    }
+
+    .close-btn {
+        display: block; /* Mostra o botão de fechar no tamanho menor */
+    }
+
+    .side-menu {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        transition: width 0.3s, background-color 0.3s;
+        background-color: #333;
+        overflow-x: hidden;
+        transition: width 0.3s;
+        padding-top: 60px;
+        z-index: 3;
+    }
+
+    .side-menu ul {
+        list-style-type: none;
+        padding: 0;
+        display: block;
+    }
+
+    .side-menu li {
+        padding: 15px 25px;
+    }
+
+    .side-menu ul > li > a{
+        color: #f1f1f1;
+        transition: ease 0.5s;
+        transition: color 0.3s;
+    }
+
+    /* Botão Abrir Menu Lateral */
+    button.light-mode {
+        color: #333;
+    }
+
+    button.dark-mode {
+        color: #fff; 
+    }
+
+    /* Botão Fechar Menu Lateral */
+    .close-btn.light-mode {
+        color: #fff;
+    }
+
+    .close-btn.dark-mode {
+        color: #333; 
+    }
+
+    /* Menu Lateral Cor de Fundo */
+    .side-menu.light-mode {
+        background-color: #333;
+    }
+    
+    .side-menu.light-mode a {
+        color: #f1f1f1;
+    }
+    
+    .side-menu.dark-mode {
+        background-color: #f1f1f1;
+    }
+    
+    .side-menu.dark-mode a {
+        color: #333;
+    }
+
+    #con{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    /* Ficha */
+    #pro > #conteudo > .ficha{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        width: 350px;
+        text-align: center;
+        margin: 20px 0px;
+        border: 2px solid rgba(128, 128, 128, 0.342);
+        border-radius: 0px 0px 15px 15px;
+    }
+    
+    #pro > #conteudo > .ficha > img{
+        height: 240px;
+        width: 350px;
+        object-fit: cover;
+    }
+
+    /* Beneficios */
+    #ben > .card{
+        width: 100%;
+        height: auto;
+        padding: 20px 0px;
+        margin: 30px 0px;
+    
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+}
+
+/* Menu - Tela Completa */
+@media screen and (min-width: 769px) {
+    .side-menu {
+        width: 466px; /* Menu fica aberto por padrão no tamanho maior */
+        display: flex;
+    }
+
+    .side-menu ul{
+        width: 465px;
+    }
+
+    .side-menu ul > li > a{
+        transition: ease 0.5s;
+        transition: color 0.3s;
+    }
+
+    .side-menu.light-mode a {
+        color: #333;
+    }
+
+    .side-menu.dark-mode a {
+        color: #f1f1f1;
+    }
+
+    .side-menu a:hover{
+        color: white;
+        background-color: rgb(68, 148, 240);
+    }
+
+    .menu-toggle {
+        display: none; /* Esconde o botão de abrir no tamanho maior */
+    }
+
+    .close-btn {
+        display: none; /* Esconde o botão de fechar no tamanho maior */
+    }
+}
+
+
+/* Tela de Computador */
+@media screen and (min-width: 1200px){
+    main{
+        margin-top: -100px;
+        width: 100%;
+        height: auto;
+    }
+
+    main h2{
+        margin: 20px 0px;
+    }
+}

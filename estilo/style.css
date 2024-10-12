@@ -1,0 +1,434 @@
+/* Estilo Principal */
+
+/* Configurações Gerais */
+*{
+    font-family: Poppins, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #333;
+}
+
+body.dark-mode {
+    background-color: #2c2c2c;
+    color: #f1f1f1
+}
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Botão Dia/Noite */
+.mud{
+	padding: 10px;
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	position: fixed;
+	background-color: white;
+	border: 1px solid rgb(194, 194, 194);
+	border-radius:  10px  10px 10px  10px;
+}
+
+.mud > i{
+	font-size: 2.5em;
+	font-weight: 800;
+}
+
+.mud:hover{
+    background-color: rgba(255, 255, 255, 0.555);
+
+    transform: scale(1.1);
+}
+
+/* Botão Subir Topo */
+#sub{
+	padding: 10px;
+	position: absolute;
+	bottom: 26%;
+	left: 20px;
+	position: fixed;
+	background-color: rgba(0, 0, 255, 0.753);
+	border: none;
+	border-radius:  10px  10px 10px  10px;
+}
+
+#sub > a{
+    text-decoration: none;
+    color: white;
+	font-size: 2.5em;
+	font-weight: 800;
+    padding: 0px 1px;
+}
+
+#sub:hover{
+    background-color: rgba(86, 86, 238, 0.753);
+    transform: scale(1.1);
+}
+
+
+/* Cabecalho */
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+header > h1{
+    padding: 0px 30px;
+    transition: color 0.3s;
+}
+
+header > h1.light-mode {
+    color: #000000; /* Título no modo claro */
+}
+
+header > h1.dark-mode {
+    color: #f5f5f5; /* Título no modo escuro */
+}
+
+.menu-toggle {
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 45px;
+    z-index: 2;
+    background: none;
+    border: none;
+    display: none; /* Esconde por padrão */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: #f1f1f1;
+    cursor: pointer;
+    display: none; /* Esconde por padrão */
+}
+
+
+/* Estilo do menu lateral */
+.side-menu ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+}
+
+.side-menu a {
+    font-size: 1.3em;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+    padding: 15px 25px;
+}
+
+.side-menu a:hover {
+    background-color: #575757b0;
+}
+
+/* Carrossel Automatico */
+section.slider{
+	margin: auto;
+	width: 100%;
+	height: auto;
+	padding: 0 !important;
+	overflow: hidden;
+}
+
+.slideConteudo{
+	width: 400%;
+	height: 100%;
+	display: flex;
+	object-fit: cover;
+}
+
+.slideConteudo input{
+	display: none;
+}
+
+.slide-box{
+	width: 25%;
+	height: auto;
+	position: relative;
+	text-align: center;
+
+	transition: 1s;
+}
+
+.slide-box img{
+	width: 100%;
+	height: 80%;
+    object-fit: cover;
+}
+
+.nav-manual, .nav-auto{
+	position: absolute;
+	width: 100%;
+	margin-top: 35%;
+	display: flex;
+	justify-content: center;
+
+	transition: 0.2s;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+	border: 2px solid white;
+	padding: 7px;
+	margin-right: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	background-color: transparent;
+}
+
+.nav-manual .manual-btn:hover{
+	background-color: rgb(68, 148, 240);
+    border-color: rgb(68, 148, 240);
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1{
+	background-color: blue;
+    border-color: blue;
+}
+
+#radio2:checked ~ .nav-auto .auto-btn2{
+	background-color: blue;
+    border-color: blue;
+}
+
+#radio3:checked ~ .nav-auto .auto-btn3{
+	background-color: blue;
+    border-color: blue;
+}
+
+#radio1:checked ~ .primeiro{
+	margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro{
+	margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro{
+	margin-left: -50%;
+}
+
+.slide-box * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+
+/* Conteudo Principal */
+main{
+    width: 100%;
+    height: auto;
+}
+
+main h2, footer h2{
+    font-size: 2em;
+    text-align: center;
+}
+
+/* Sessão Produtos */
+#pro{
+    width: 100%;
+    height: 100%;
+}
+
+#pro > #conteudo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+#pro > #conteudo > .ficha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 400px;
+    text-align: center;
+    margin: 20px 0px;
+    border: 2px solid rgba(128, 128, 128, 0.342);
+    border-radius: 0px 0px 15px 15px;
+}
+
+#pro > #conteudo > .ficha > img{
+    height: 240px;
+    width: 400px;
+    object-fit: cover;
+}
+
+#pro > #conteudo > .ficha > h3{
+    margin: 20px 0px;
+    font-size: 1.5em;
+    border-bottom: 1px solid black;
+    width: 90%;
+    padding-bottom: 10px;
+}
+
+#pro > #conteudo > .ficha > button{
+    margin: 20px 0px;
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    padding: 20px 50px;
+    font-size: 1.5em;
+    transition: ease-in-out 0.3s;
+}
+
+#pro > #conteudo > .ficha > button:hover{
+    background-color: rgb(211, 33, 33);
+}
+
+
+/* Sessão Beneficios */
+#ben{
+    background-color: blue;
+    height: auto;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+    padding: 30px 0px;
+}
+
+#ben > .card{
+    width: 100%;
+    height: auto;
+    padding: 20px 0px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+#ben > .card > div > .img-ben{
+    height: 350px;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 10px 0px 10px 0px;
+}
+
+#ben > .card > .txt{
+    color: white;
+    width: 350px;
+}
+
+#ben > .card > .txt > p{
+    text-align: justify;
+    font-size: 1.5em;
+}
+
+#ben > .card > .txt > h3{
+    border-bottom: 1px solid white;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Rodapé */
+footer{
+    background-color: rgb(66, 66, 66);
+    color: white;
+    padding: 20px 0px;
+}
+
+footer > h2{
+    padding-bottom: 2%;
+}
+
+#con{
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+footer > h4{
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#con > ul{
+    width: auto;
+    margin: 0px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 20px;
+    flex-flow: column wrap;
+}
+
+#con > ul > li{
+    list-style-type: none;
+    background-color: transparent;
+    border: 1px solid white;
+
+    margin-bottom: 15px;
+    border: 2px solid white;
+
+    transition: 0.5s;
+    transform: ease;
+}
+
+#con > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    height: 50px;
+    width: 100px;
+}
+
+#con> ul > li > a > button{
+    width: 200px;
+    height: 55px;
+    padding: 30px 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: transparent;
+    color: white;
+    border: none;
+
+    font-size: 1em;
+    font-weight: 600;
+}
+
+#con > ul > li > a > button > i{
+    font-size: 1.5em;
+    padding-right: 10px;
+}
+
+#con li:hover{
+    background-color: white;
+}
+
+#con li > a > button:hover{
+    color: black;
+}
